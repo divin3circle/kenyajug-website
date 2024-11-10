@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import java from "../../public/java.png";
 import { FaJava } from "react-icons/fa";
+import Events from "../components/Events";
 
 function Landing() {
   return (
@@ -21,6 +22,9 @@ function Landing() {
         <p className="relative text-white top-1/4 text-2xl text-center font-body">
           Join us as we connect, share, and grow the Java community in Kenya
         </p>
+      </section>
+      <section className="max-w-7xl mx-auto mt-10">
+        <Events />
       </section>
     </div>
   );
