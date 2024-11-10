@@ -4,7 +4,7 @@ import { FaJava } from "react-icons/fa";
 function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false);
   return (
-    <div className="font-body flex justify-between items-center mx-2">
+    <div className="font-body flex justify-between items-center mx-2 text-white">
       <div className="flex items-center gap-2">
         <img
           src="../../public/logo.png"
@@ -14,17 +14,17 @@ function Navbar() {
         <h1 className="font-bold text-2xl">KenyaJug</h1>
       </div>
       <div>
-        <ul className="md:flex items-center gap-4 hidden">
-          <li className="font-semibold text-lg hover:border-b-2 border-black transition-all cursor-pointer">
+        <ul className="md:flex items-center gap-6 hidden">
+          <li className="font-semibold text-lg hover:border-b-2 border-white transition-all cursor-pointer">
             Events
           </li>
-          <li className="font-semibold text-lg hover:border-b-2 border-black transition-all cursor-pointer">
+          <li className="font-semibold text-lg hover:border-b-2 border-white transition-all cursor-pointer">
             Members
           </li>
-          <li className="font-semibold text-lg hover:border-b-2 border-black transition-all cursor-pointer">
+          <li className="font-semibold text-lg hover:border-b-2 border-white transition-all cursor-pointer">
             About
           </li>
-          <li className="font-semibold text-lg hover:border-b-2 border-black transition-all cursor-pointer">
+          <li className="font-semibold text-lg hover:border-b-2 border-white transition-all cursor-pointer">
             Speakers
           </li>
         </ul>
