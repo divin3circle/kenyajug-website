@@ -1,6 +1,6 @@
 # Kenya Java User Group Official Website
 
-## Run locally
+## Run Frontend locally
 
 ```bash
 cd frontend #navigate to the frontend directory
