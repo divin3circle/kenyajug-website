@@ -23,7 +23,7 @@ function Landing() {
           Join us as we connect, share, and grow the Java community in Kenya
         </p>
       </section>
-      <section className="max-w-7xl mx-auto mt-10">
+      <section id="events" className="max-w-7xl mx-auto mt-10">
         <Events />
       </section>
     </div>
