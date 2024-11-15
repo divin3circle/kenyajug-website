@@ -39,7 +39,7 @@ function Navbar() {
         className="flex items-center justify-center md:hidden"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <FaJava size={44} />
+        <FaJava size={56} />
       </div>
       <div
         className={`backdrop-blur-lg h-screen w-full md:hidden flex flex-col fixed top-0 left-0 z-50 transform transition-transform duration-500 ${
