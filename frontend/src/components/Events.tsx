@@ -11,7 +11,7 @@ function Events() {
           <div className="p-2">
             <img
               src={event.image}
-              className="w-full h-[300px] sm:h-[200px] object-fill rounded-md"
+              className="w-full h-[250px] sm:h-[200px] object-fill rounded-md"
             />
             <div className="">
               <div className="h-[150px]">
