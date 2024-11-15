@@ -8,6 +8,8 @@ export interface Event {
   moderator: string;
   level: string;
   image: string;
+  lumaLink: string;
+  attendees: number | string;
 }
 
 export const events: Event[] = [
@@ -20,6 +22,8 @@ export const events: Event[] = [
     moderator: "KenyaJug",
     level: "Intermediate",
     image: event1,
+    lumaLink: "",
+    attendees: "All",
   },
   {
     id: 2,
@@ -30,6 +34,8 @@ export const events: Event[] = [
     moderator: "Dancun Ian",
     level: "Beginner",
     image: java,
+    lumaLink: "",
+    attendees: 40,
   },
   {
     id: 3,
@@ -40,6 +46,8 @@ export const events: Event[] = [
     moderator: "Sam Programiz",
     level: "Intermediate",
     image: event2,
+    lumaLink: "",
+    attendees: 34,
   },
   {
     id: 4,
@@ -50,5 +58,7 @@ export const events: Event[] = [
     moderator: "Phenny Mwaisaka",
     level: "Intermediate",
     image: event3,
+    lumaLink: "https://lu.ma/zx43buo9",
+    attendees: 0,
   },
 ];
