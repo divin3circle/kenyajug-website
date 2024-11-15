@@ -10,6 +10,9 @@ export interface Event {
   image: string;
   lumaLink: string;
   attendees: number | string;
+  cohost1: string;
+  cohost2: string;
+  topics: string[];
 }
 
 export const events: Event[] = [
@@ -24,6 +27,9 @@ export const events: Event[] = [
     image: event1,
     lumaLink: "",
     attendees: "All",
+    cohost1: "Sam Programiz",
+    cohost2: "Phenny Mwaisaka",
+    topics: ["Java", "Java21", "Spring Boot", "JavaFX"],
   },
   {
     id: 2,
@@ -36,6 +42,9 @@ export const events: Event[] = [
     image: java,
     lumaLink: "",
     attendees: 40,
+    cohost1: "Sam Programiz",
+    cohost2: "Lenny Dennis",
+    topics: ["Java", "Java Syntax", "Core Java", "Variables"],
   },
   {
     id: 3,
@@ -48,6 +57,9 @@ export const events: Event[] = [
     image: event2,
     lumaLink: "",
     attendees: 34,
+    cohost1: "Phenny Mwaisaka",
+    cohost2: "Dancun Ian",
+    topics: ["Java", "Java Performance", "Java Memory", "Java IO"],
   },
   {
     id: 4,
@@ -60,5 +72,8 @@ export const events: Event[] = [
     image: event3,
     lumaLink: "https://lu.ma/zx43buo9",
     attendees: 0,
+    cohost1: "Sam Programiz",
+    cohost2: "Dancun Ian",
+    topics: ["Java", "Java Syntax", "Core Java", "Variables"],
   },
 ];
