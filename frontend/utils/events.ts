@@ -1,4 +1,4 @@
-import { java, event1, event2 } from "./index";
+import { java, event1, event2, event3 } from "./index";
 
 export interface Event {
   id: number;
@@ -40,5 +40,15 @@ export const events: Event[] = [
     moderator: "Sam Programiz",
     level: "Intermediate",
     image: event2,
+  },
+  {
+    id: 4,
+    title: "Java Essentials",
+    description:
+      "Mastering Java programming language syntax and exceptions handling best practices.",
+    duration: "1 hour",
+    moderator: "Phenny Mwaisaka",
+    level: "Intermediate",
+    image: event3,
   },
 ];
