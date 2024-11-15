@@ -2,10 +2,14 @@ import React from "react";
 import { FaJava } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-function Navbar() {
+function Navbar({ isHome }: { isHome: boolean }) {
   const [isOpen, setIsOpen] = React.useState(false);
   return (
-    <div className="font-body flex justify-between items-center mx-2 text-white">
+    <div
+      className={`font-body flex justify-between items-center mx-2 ${
+        isHome ? "text-white" : "text-black"
+      }`}
+    >
       <Link to="/" className="flex items-center gap-2">
         <img
           src="../../public/logo.png"
@@ -18,25 +22,33 @@ function Navbar() {
         <ul className="md:flex items-center gap-6 hidden">
           <a
             href="#events"
-            className="font-semibold text-lg hover:border-b-2 border-white transition-all cursor-pointer"
+            className={`font-semibold text-lg hover:border-b-2 ${
+              isHome ? "border-white" : "border-black"
+            } transition-all cursor-pointer`}
           >
             Events
           </a>
           <Link
             to="/members"
-            className="font-semibold text-lg hover:border-b-2 border-white transition-all cursor-pointer"
+            className={`font-semibold text-lg hover:border-b-2 ${
+              isHome ? "border-white" : "border-black"
+            } transition-all cursor-pointer`}
           >
             Members
           </Link>
           <a
             href="#about"
-            className="font-semibold text-lg hover:border-b-2 border-white transition-all cursor-pointer"
+            className={`font-semibold text-lg hover:border-b-2 ${
+              isHome ? "border-white" : "border-black"
+            } transition-all cursor-pointer`}
           >
             About
           </a>
           <Link
             to="/speakers"
-            className="font-semibold text-lg hover:border-b-2 border-white transition-all cursor-pointer"
+            className={`font-semibold text-lg hover:border-b-2 ${
+              isHome ? "border-white" : "border-black"
+            } transition-all cursor-pointer`}
           >
             Speakers
           </Link>

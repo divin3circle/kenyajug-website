@@ -1,4 +1,4 @@
-import { java, event1, event2 } from "./index";
+import { java, event1, event2, event3 } from "./index";
 
 export interface Event {
   id: number;
@@ -8,6 +8,11 @@ export interface Event {
   moderator: string;
   level: string;
   image: string;
+  lumaLink: string;
+  attendees: number | string;
+  cohost1: string;
+  cohost2: string;
+  topics: string[];
 }
 
 export const events: Event[] = [
@@ -20,6 +25,11 @@ export const events: Event[] = [
     moderator: "KenyaJug",
     level: "Intermediate",
     image: event1,
+    lumaLink: "",
+    attendees: "All",
+    cohost1: "Sam Programiz",
+    cohost2: "Phenny Mwaisaka",
+    topics: ["Java", "Java21", "Spring Boot", "JavaFX"],
   },
   {
     id: 2,
@@ -30,6 +40,11 @@ export const events: Event[] = [
     moderator: "Dancun Ian",
     level: "Beginner",
     image: java,
+    lumaLink: "",
+    attendees: 40,
+    cohost1: "Sam Programiz",
+    cohost2: "Lenny Dennis",
+    topics: ["Java", "Java Syntax", "Core Java", "Variables"],
   },
   {
     id: 3,
@@ -40,5 +55,25 @@ export const events: Event[] = [
     moderator: "Sam Programiz",
     level: "Intermediate",
     image: event2,
+    lumaLink: "",
+    attendees: 34,
+    cohost1: "Phenny Mwaisaka",
+    cohost2: "Dancun Ian",
+    topics: ["Java", "Java Performance", "Java Memory", "Java IO"],
+  },
+  {
+    id: 4,
+    title: "Java Essentials",
+    description:
+      "Mastering Java programming language syntax and exceptions handling best practices.",
+    duration: "1 hour",
+    moderator: "Phenny Mwaisaka",
+    level: "Intermediate",
+    image: event3,
+    lumaLink: "https://lu.ma/zx43buo9",
+    attendees: 0,
+    cohost1: "Sam Programiz",
+    cohost2: "Dancun Ian",
+    topics: ["Java", "Java Syntax", "Core Java", "Variables"],
   },
 ];

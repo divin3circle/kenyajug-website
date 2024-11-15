@@ -3,14 +3,14 @@ import Navbar from "../components/Navbar";
 
 function NotFound() {
   return (
-    <div className="bg-black -mb-8">
-      <Navbar />
-      <div className="grid h-screen place-content-center bg-black px-4">
+    <div className=" -mb-8">
+      <Navbar isHome={false} />
+      <div className="grid h-screen place-content-center px-4">
         <div className="text-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1024 768"
-            className="mx-auto h-56 w-auto text-white sm:h-64"
+            className="mx-auto h-56 w-auto text-black sm:h-64"
           >
             <g fill="none" fillRule="evenodd">
               <g fill="#525efb">
