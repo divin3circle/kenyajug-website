@@ -13,7 +13,7 @@ function Landing() {
         style={{ backgroundImage: `url(${java})` }}
       >
         <div className="relative z-10">
-          <Navbar />
+          <Navbar isHome />
         </div>
         <div className="absolute inset-0 bg-black opacity-60 z-0"></div>
         <h1 className="relative text-white top-1/4 text-6xl font-bold text-center mt-20 font-body">

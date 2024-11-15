@@ -1,14 +1,23 @@
 import React from "react";
 import { events } from "../../utils/events";
 import { FaJava } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 function Events() {
+  const navigate = useNavigate();
+
+  const handleNavigation = (id: number) => {
+    navigate(`/events/${id}`);
+  };
   return (
     <div>
       <h1 className="text-3xl font-bold font-body p-1">Events</h1>
       <div className="grid grid-cols-1 gap-4 sm:gap-2 lg:gap-4 sm:grid-cols-2 lg:grid-cols-3 mt-4 mx-2">
         {events.map((event) => (
-          <div className="p-2 cursor-pointer hover:scale-95 ease-in duration-300 transition-all hover:shadow-lg rounded-md">
+          <div
+            className="p-2 cursor-pointer hover:scale-95 ease-in duration-300 transition-all hover:shadow-lg rounded-md"
+            onClick={() => handleNavigation(event.id)}
+          >
             <img
               src={event.image}
               className="w-full h-[250px] sm:h-[200px] object-fill rounded-md"
