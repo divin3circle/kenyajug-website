@@ -1,13 +1,13 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 
-function Members() {
+function Merchandise() {
   return (
     <div>
       <Navbar isHome={false} />
-      <p>Members</p>
+      <h1>Merchandise</h1>
     </div>
   );
 }
 
-export default Members;
+export default Merchandise;

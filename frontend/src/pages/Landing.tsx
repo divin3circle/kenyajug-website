@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+//@ts-ignore
 import java from "../../public/java.png";
 import { FaJava } from "react-icons/fa";
 import Events from "../components/Events";

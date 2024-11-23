@@ -34,7 +34,7 @@ function Navbar({ isHome }: { isHome: boolean }) {
               isHome ? "border-white" : "border-black"
             } transition-all cursor-pointer`}
           >
-            Members
+            Merchandise
           </Link>
           <a
             href="#about"
@@ -101,7 +101,7 @@ function Navbar({ isHome }: { isHome: boolean }) {
             to="/members"
             className="font-semibold text-lg hover:border-b-2 border-black transition-all cursor-pointer"
           >
-            Members
+            Merchandise
           </Link>
           <Link
             to="#about"
