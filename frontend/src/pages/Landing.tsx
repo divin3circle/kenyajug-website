@@ -5,6 +5,7 @@ import java from "../../public/java.png";
 import { FaJava } from "react-icons/fa";
 import Events from "../components/Events";
 import About from "../components/About";
+import Footer from "../components/Footer";
 
 function Landing() {
   return (
@@ -31,6 +32,7 @@ function Landing() {
       <section id="events" className="max-w-7xl mx-auto mt-10">
         <Events />
       </section>
+      <Footer />
     </div>
   );
 }
