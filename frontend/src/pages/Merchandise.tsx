@@ -22,9 +22,15 @@ function MerchandiseCard({ merchandise }: { merchandise: any }) {
             see more.
           </span>
         </h1>
-        <h1 className="text-gray-400 text-xs font-body">
-          {merchandise.colors.length} Colors || {merchandise.sizes.length} Sizes
-        </h1>
+        <div className="flex items-center justify-between mt-2">
+          <h1 className="text-gray-400 text-xs font-body">
+            {merchandise.colors.length} Colors || {merchandise.sizes.length}{" "}
+            Sizes
+          </h1>
+          <h1 className="text-gray-600 text-sm underline font-bold font-body">
+            KSH {merchandise.price}
+          </h1>
+        </div>
       </div>
     </div>
   );
