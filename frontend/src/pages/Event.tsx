@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import { useParams, useNavigate } from "react-router-dom";
 import { events } from "../../utils/events";
 import { FaJava } from "react-icons/fa";
+import Footer from "../components/Footer";
 
 function Event() {
   const { id } = useParams();
@@ -104,7 +105,7 @@ function Event() {
             >
               <img
                 src={event.image}
-                className="w-full h-[250px] sm:h-[200px] object-fill rounded-md"
+                className="w-full h-[250px] sm:h-[200px] md:h-[300px] object-fill rounded-md"
               />
               <div className="">
                 <div className="h-[150px]">
@@ -134,6 +135,7 @@ function Event() {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

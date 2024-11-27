@@ -17,6 +17,7 @@ function Events() {
           <div
             className="p-2 cursor-pointer hover:scale-95 ease-in duration-300 transition-all hover:shadow-lg rounded-md"
             onClick={() => handleNavigation(event.id)}
+            key={event.id}
           >
             <img
               src={event.image}

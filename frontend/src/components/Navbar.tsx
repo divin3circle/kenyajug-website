@@ -21,29 +21,32 @@ function Navbar({ isHome }: { isHome: boolean }) {
       <div>
         <ul className="md:flex items-center gap-6 hidden">
           <a
-            href="#events"
-            className={`font-semibold text-lg hover:border-b-2 ${
-              isHome ? "border-white" : "border-black"
-            } transition-all cursor-pointer`}
-          >
-            Events
-          </a>
-          <Link
-            to="/members"
-            className={`font-semibold text-lg hover:border-b-2 ${
-              isHome ? "border-white" : "border-black"
-            } transition-all cursor-pointer`}
-          >
-            Members
-          </Link>
-          <a
             href="#about"
             className={`font-semibold text-lg hover:border-b-2 ${
               isHome ? "border-white" : "border-black"
             } transition-all cursor-pointer`}
+            onClick={() => setIsOpen(false)}
           >
             About
           </a>
+          <a
+            href="#events"
+            className={`font-semibold text-lg hover:border-b-2 ${
+              isHome ? "border-white" : "border-black"
+            } transition-all cursor-pointer`}
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            Events
+          </a>
+          <Link
+            to="/store"
+            className={`font-semibold text-lg hover:border-b-2 ${
+              isHome ? "border-white" : "border-black"
+            } transition-all cursor-pointer`}
+          >
+            Store
+          </Link>
+
           <Link
             to="/speakers"
             className={`font-semibold text-lg hover:border-b-2 ${
@@ -92,23 +95,24 @@ function Navbar({ isHome }: { isHome: boolean }) {
         </div>
         <ul className="flex flex-col h-full items-center gap-12 mt-20">
           <Link
+            to="#about"
+            className="font-semibold text-lg hover:border-b-2 border-black transition-all cursor-pointer"
+          >
+            About
+          </Link>
+          <Link
             to="#events"
             className="font-semibold text-lg hover:border-b-2 border-black transition-all cursor-pointer"
           >
             Events
           </Link>
           <Link
-            to="/members"
+            to="/store"
             className="font-semibold text-lg hover:border-b-2 border-black transition-all cursor-pointer"
           >
-            Members
+            Store
           </Link>
-          <Link
-            to="#about"
-            className="font-semibold text-lg hover:border-b-2 border-black transition-all cursor-pointer"
-          >
-            About
-          </Link>
+
           <Link
             to="/speakers"
             className="font-semibold text-lg hover:border-b-2 border-black transition-all cursor-pointer"
