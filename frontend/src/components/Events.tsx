@@ -31,7 +31,7 @@ function Events() {
                 <h1 className="font-body font-extrabold my-1 text-lg">
                   {event.title}
                 </h1>
-                <p className="font-body w-[95%] text-gray-600">
+                <p className="font-body w-[95%] text-gray-600 dark:text-gray-400">
                   {event.description}
                 </p>
               </div>

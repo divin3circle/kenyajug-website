@@ -6,7 +6,7 @@ function Navbar({ isHome }: { isHome: boolean }) {
   const [isOpen, setIsOpen] = React.useState(false);
   return (
     <div
-      className={`font-body flex justify-between items-center mx-2 ${
+      className={`font-body flex justify-between items-center mx-2 dark:text-white ${
         isHome ? "text-white" : "text-black"
       }`}
     >

@@ -15,8 +15,10 @@ function MerchandiseCard({ merchandise }: { merchandise: any }) {
         className="object-cover mx-2 rounded-lg md:h-[250px] h-[300px]"
       />
       <div className="mt-4">
-        <h1 className="font-body font-bold underline">{merchandise.name}</h1>
-        <h1 className="font-body text-sm leading-relaxed text-gray-600">
+        <h1 className="font-body font-bold underline mb-1 dark:text-gray-300">
+          {merchandise.name}
+        </h1>
+        <h1 className="font-body text-sm leading-relaxed text-gray-600 dark:text-gray-400">
           {merchandise.description.substring(0, 75)}..{" "}
           <span className="text-[14px] underline text-blue-600 cursor-pointer">
             see more.
@@ -27,7 +29,7 @@ function MerchandiseCard({ merchandise }: { merchandise: any }) {
             {merchandise.colors.length} Colors || {merchandise.sizes.length}{" "}
             Sizes
           </h1>
-          <h1 className="text-gray-600 text-sm underline font-bold font-body">
+          <h1 className="text-gray-600 text-sm underline font-bold font-body dark:text-green-500">
             KSH {merchandise.price}
           </h1>
         </div>
