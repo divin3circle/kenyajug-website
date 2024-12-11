@@ -1,6 +1,8 @@
 import React from "react";
 import { FaJava } from "react-icons/fa";
 import { Link } from "react-router-dom";
+//@ts-ignore
+import logo from "../../public/logo.png";
 
 function Navbar({ isHome }: { isHome: boolean }) {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -11,11 +13,7 @@ function Navbar({ isHome }: { isHome: boolean }) {
       }`}
     >
       <Link to="/" className="flex items-center gap-2">
-        <img
-          src="../../public/logo.png"
-          alt="logo"
-          className="h-14 rounded-full w-14"
-        />
+        <img src={logo} alt="logo" className="h-14 rounded-full w-14" />
         <h1 className="font-bold text-2xl">KenyaJug</h1>
       </Link>
       <div>
@@ -79,11 +77,7 @@ function Navbar({ isHome }: { isHome: boolean }) {
       >
         <div className="flex items-center justify-between mt-1 mx-1">
           <Link to="/" className="flex items-center gap-2 mt-2">
-            <img
-              src="../../public/logo.png"
-              alt="logo"
-              className="h-14 rounded-full w-14"
-            />
+            <img src={logo} alt="logo" className="h-14 rounded-full w-14" />
             <h1 className="font-bold text-2xl">KenyaJug</h1>
           </Link>
           <div
