@@ -8,8 +8,8 @@ function Navbar({ isHome }: { isHome: boolean }) {
   const [isOpen, setIsOpen] = React.useState(false);
   return (
     <div
-      className={`font-body flex justify-between items-center mx-2 dark:text-white ${
-        isHome ? "text-white" : "text-black"
+      className={`font-body flex justify-between items-center mx-2 dark:text-white light:text-black ${
+        isHome ? "text-white" : "text-black dark:text-white"
       }`}
     >
       <Link to="/" className="flex items-center gap-2">
